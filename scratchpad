@@ -53,14 +53,41 @@ Sheri
 Lisa
 Phil
 Ayun
+
 Scott
 Greg
 Diana
 Anita
+
 Joe
 Steve
 Ryan
 Bilal
+
 Jeewon
 Tif
 Malic
+
+
+
+reduce clicks
+    each writer has one page 
+    their div is on display 
+    scroll to hidden anchors, include all their vids on one page
+    
+    
+    function lisa2Function() {
+var appBanners = document.getElementsByClassName('play-lbz');
+ for (var i = 0; i < appBanners.length; i ++); {
+     appBanners[i].style.display = 'block';
+ }
+}
+
+function philFunction() {
+    var x = document.getElementById("play-phil");
+    if (x.style.display === 'none') {
+    x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+        }
+}

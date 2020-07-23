@@ -121,11 +121,30 @@ body {
             grid-row: 1;
         }
         
+            #play-sheri {
+                grid-column: 6;
+                grid-row: 1;
+            }
+        
         .lb {
             grid-column: 6;
             grid-row: 3;
             
         }
+        
+       .play-lbz {
+       }
+        
+       
+            #play-lb {
+                grid-column: 7;
+                grid-row: 3;
+            }
+            
+            #play-lb2 {
+                grid-column: 6;
+                grid-row: 4;
+            }
         
         .phil {
             grid-column: 7;
@@ -152,6 +171,65 @@ body {
             grid-row: 4;
         }
     
+    
+    
+        .scott {
+            grid-column: 7;
+            grid-row: 5;
+        }
+        
+        .greg {
+            grid-column: 8;
+            grid-row: 6;
+        }
+        
+        .diana {
+            grid-column: 6;
+            grid-row: 7;
+        }
+        
+        .anita {
+            grid-column: 5;
+            grid-row: 8;
+        }
+        
+        
+        .joe {
+            grid-row: 8;
+            grid-column: 4;
+        }
+        
+        .steve {
+            grid-column: 3;
+            grid-row: 7;
+        }
+        
+        .ryan {
+            grid-column: 1;
+            grid-row: 6;
+        }
+        
+        .bilal {
+            grid-column: 1;
+            grid-row: 5;
+        }
+        
+        
+        
+        .jeewon {
+            grid-column: 1;
+            grid-row: 3;
+        }
+        
+        .tif {
+            grid-row: 2;
+            grid-column: 2;
+        }
+            
+        .malic {
+            grid-row: 1;
+            grid-column: 3;
+        }
     
 
 /* link styling */
