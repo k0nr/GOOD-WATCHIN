@@ -34,8 +34,8 @@ function philFunction() {
         }
 }
 
-</script
->
+</script>
+
 <script>
 function toggle_visibility() {
     elements = document.getElementsByClassName('play-lbz');
@@ -47,7 +47,94 @@ function toggle_visibility() {
 </script>
 
 
+<script>
+function ayunToggle() {
+    elements = document.getElementsByClassName('play-ayun');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'inline' ? 'none' ; 'inline';
+        } 
+    }
+</script>
 
+<script>
+function sheriToggle() {
+    elements = document.getElementsByClassName('play-sheri');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'inline' ? 'none' : 'inline';
+    }
+}
+
+</script>
+
+<script>
+function ayunToggle() {
+    elements = document.getElementsByClassName('play-ayun');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'inline' ? 'none' : 'inline';
+    }
+}
+
+</script>
+
+<script>
+function scottToggle() {
+    elements = document.getElementsByClassName('play-scott');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'inline' ? 'none' : 'inline';
+    }
+}
+
+</script>
+
+<script>
+function gregToggle() {
+    elements = document.getElementsByClassName('play-greg');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'inline' ? 'none' : 'inline';
+    }
+}
+
+</script>
+
+<script>
+function dianaToggle() {
+    elements = document.getElementsByClassName('play-diana');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'inline' ? 'none' : 'inline';
+    }
+}
+
+</script>
+
+<script>
+function anitaToggle() {
+    elements = document.getElementsByClassName('play-anita');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'inline' ? 'none' : 'inline';
+    }
+}
+
+</script>
+
+<script>
+function ryanToggle() {
+    elements = document.getElementsByClassName('play-ryan');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'inline' ? 'none' : 'inline';
+    }
+}
+
+</script>
+
+<script>
+function bilalToggle() {
+    elements = document.getElementsByClassName('play-bilal');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'inline' ? 'none' : 'inline';
+    }
+}
+
+</script>
 <body>
 
 <div id="warning-message">
@@ -64,8 +151,9 @@ function toggle_visibility() {
             <div class="banner pattern-zigzag-sm bg-yellow yellow-lighter"><span style="color: black; background-color: #dc13ff">THE INFINTE WRENCH GOES VIRAL [BONUS STAGE]</span></div>        <!-- remember to make "bonus stage" blink or something.. and ask if there's a proper name -->
     
     
-            <div class="mid pattern-zigzag-md bg-yellow yellow-lightest"><div class="video intro">
-                <div class="youtube-responsive-container"><iframe src="https://www.youtube.com/embed/jBfjMVB3RYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="mid pattern-zigzag-md bg-yellow yellow-lightest">
+                <div class="video intro">
+                    <div class="youtube-responsive-container"><iframe src="https://www.youtube.com/embed/jBfjMVB3RYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 </div>
             </div></div>
          
@@ -73,35 +161,60 @@ function toggle_visibility() {
         <div class="mid pattern-zigzag-sm bg-yellow-lighter yellow">.
             <div class="clock">
                 <div class="grid-container">
+                 
                     <div class="item lb" onclick="toggle_visibility()"><img src="headshots/lisa-buscani.png"></div>
                         <div class="play-lbz" id="play-lb" style="display: none">HIS WAY</div>
                         <div class="play-lbz" id="play-lb2" style="display: none">THE BIG BLACKOUT</div>
                     
                     
-                    <div class="item sheri"><img src="headshots/sheri-reda.png"></div>
+                    <div class="item sheri" onclick="sheriToggle()"><img src="headshots/sheri-reda.png"></div>
+                        <div class="play-sheri" id="sheri1" style="display: none"><a href="sheri.html">HOME ENTER<br>TAINMENT</a></div>
+                        
+                    
+                    <div class="item phil" onclick="philFunction()"><img src="headshots/phil-ridarelli.png"></div>
+                        <div id="play-phil" style="display: none"><a href="phil.html">MR. RIDARELLI & MR. RACCOON</a></div>
+                    
+                    <div class="item ayun" onclick="ayunToggle()"><img src="headshots/ayun-halliday.png"></div>
+                        <div class="play-ayun" id="ayun1" style="display: none"><a href="ayun.html">SHOT 3</a></div>
                     
                     
-                    <div class="item phil" onclick="philFunction()"> 
-                    <img src="headshots/phil-ridarelli.png">
-                    </div>
-                    
-                    <div id="play-phil" style="display: none" class="pattern-zigzag-md bg-yellow yellow-lighter"><a href="phil.html">MR. RIDARELLI & MR. RACCOON</a></div>
-                    
-                    <div class="item ayun"><img src="headshots/ayun-halliday.png"></div>
                     
                     
                     
+                    <div class="item scott" onclick="scottToggle()"><img src="headshots/scott-hermes.png"></div>
+                        <div class="play-scott" id="scott1" style="display: none"><a href="scott.html">[try this at home - HOME EDITION]</a></div>
                     
-                    <div class="item scott"><img src="headshots/scott-hermes.png"></div>
-                    <div class="item greg"><img src="headshots/greg-kotis.png"></div>
-                    <div class="item diana"><img src="headshots/diana-slickman.png"></div>
-                    <div class="item anita"><img src="headshots/anita-loomis.png"></div>
+                    <div class="item greg" onclick="gregToggle()"><img src="headshots/greg-kotis.png"></div> 
+                        <div class="play-greg" id="greg1" style="display: none"><a href="greg.html">Pretzel,<br>Pretzel</a></div>
+                        
+                    <div class="item diana" onclick="dianaToggle()"><img src="headshots/diana-slickman.png"></div>
+                        <div class="play-diana" id="diana1" style="display: none"><a href="diana.html">Cloth Doll: a cautionary tale</a></div>
+                        <div class="play-diana" id="diana2" style="display: none"><a href="diana.html">9, 12, 3, 6, 9</a></div>
+                        <div class="play-diana" id="diana3" style="display: none"><a href="diana.html">Not Dead Yet: our one-obituraries for the New York Times</a></div>
+                        
+                        
+                    <div class="item anita" onclick="anitaToggle()"><img src="headshots/anita-loomis.png"></div>
+                        <div class="play-anita" id="anita1" style="display: none"><a href="anita.html">I Made It Until 10:46 pm today, which is 14 hours longer than yesterday so I guess I am flattening the curve</a></div>
+                        <div class="play-anita" id="anita2" style="display: none"><a href="anita.html">P.I.S.S.E.D (Pandemic Induced Stress Syndrome Examined Dialectically) or Brecht's Distancing Technique Is Here For You In Your Time of Need</a></div>
+                        <div class="play-anita" id="anita3" style="display: none"><a href="anita.html">Number of Worms Rescued From The Flooding Paths of a Nature Preserve During a Thunderstorm (which is the only time my daughter feels safe to go outside)</a></div>
+                        
+                        
                     
                     <div class="item joe"><img src="headshots/joe-dempsey.png"></div>
                     <div class="item steve"><img src="headshots/steve-mosqueda.png"></div>
-                    <div class="item ryan"><img src="headshots/ryan-walters.png"></div>
-                    <div class="item bilal"><img src="headshots/bilal-dardai.png"></div>
-                    
+                    <div class="item ryan" onclick="ryanToggle()"><img src="headshots/ryan-walters.png"></div>
+                        <div class="play-ryan" id="ryan1" style="display: none"><a href="ryan.html">Ryan Walters: Homemade Daredevil</a></div>
+                        <div class="play-ryan" id="ryan2" style="display: none"><a href="ryan.html">Tiny Buster Keaton House Gag</a></div>
+                        <div class="play-ryan" id="ryan3" style="display: none"><a href="ryan.html">The Minotaur's Curse</a></div>
+                        <div class="play-ryan" id="ryan4" style="display: none"><a href="ryan.html">#AARGHH</a></div>
+                        <div class="play-ryan" id="ryan5" style="display: none"><a href="ryan.html">Punch Line with Spittakes</a></div>
+                            
+                        
+                    <div class="item bilal" onclick="bilalToggle()"><img src="headshots/bilal-dardai.png"></div>
+                        <div class="play-bilal" id="bilal1" style="display: none"><a href="bilal.html">Phases Six Through Ten</a></div>
+                        <div class="play-bilal" id="bilal2" style="display: none"><a href="bilal.html">ENHANCE</a></div>
+                        <div class="play-bilal" id="bilal3" style="display: none"><a href="bilal.html">With a Full Day's Supply of Vitamin Torture Porn</a></div>
+                        
                     <div class="item jeewon"><img src="headshots/jeewon-wright-kim.png"></div>
                     <div class="item tif"><img src="headshots/tif-harrison.png"></div>
                     <div class="item malic"><img src="headshots/malic-white.png"></div>

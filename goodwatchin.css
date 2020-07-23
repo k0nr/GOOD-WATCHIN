@@ -121,7 +121,14 @@ body {
             grid-row: 1;
         }
         
-            #play-sheri {
+        .play-sheri {
+           background-color: magenta;
+           font-size: 1.5vw;
+           line-height: 1;
+           color: black;
+       }
+        
+            #sheri1 {
                 grid-column: 6;
                 grid-row: 1;
             }
@@ -133,6 +140,10 @@ body {
         }
         
        .play-lbz {
+           background-color: magenta;
+           font-size: 1.5vw;
+           line-height: 1;
+           color: black;
        }
         
        
@@ -156,7 +167,7 @@ body {
                     grid-row: 2;
                     font-size: 1.5vw;
                     line-height: 1;
-                    background-color: rgba(255, 245, 51, 0.85);
+                    background-color: cyan;
                     color: black;
                     
                 }
@@ -170,6 +181,14 @@ body {
             grid-column: 8;
             grid-row: 4;
         }
+            #ayun1 {
+            grid-column: 7;
+            grid-row: 4;
+            font-size: 1.5vw;
+            line-height: 1;
+            background-color: orange;
+            color: black;
+            }
     
     
     
@@ -177,22 +196,88 @@ body {
             grid-column: 7;
             grid-row: 5;
         }
-        
+            .play-scott {
+            }
+            
+            #scott1 {
+                grid-column: 6;
+                grid-row: 5;
+                line-height: 1;
+                font-size: 1.1vw;
+                background-color: yellow;
+                color: black;
+            }
+            
         .greg {
             grid-column: 8;
             grid-row: 6;
         }
+            .play-greg { }
+            
+            #greg1 {
+                grid-column: 8;
+                grid-row: 5;
+                line-height: 1;
+                font-size: 1.2vw;
+                background-color: pink;
+                color: black;
+            }
         
         .diana {
             grid-column: 6;
             grid-row: 7;
         }
         
+            .play-diana {
+                line-height: 1;
+                
+            }
+            
+            #diana1 {
+                grid-column: 6;
+                grid-row: 6; 
+                background-color: yellow;
+            }
+            
+            #diana2 {
+                grid-column: 7;
+                grid-row: 6;
+                background-color: magenta;
+            }
+            
+            #diana3 {
+                grid-column: 7;
+                grid-row: 7;
+                background-color: cyan;
+            }
+        
         .anita {
             grid-column: 5;
             grid-row: 8;
         }
         
+            .play-anita {
+                line-height: 1;
+               
+            }
+            
+            #anita1 {
+                grid-column: 5;
+                grid-row: 7;
+                background-color: lime;
+            }
+            
+            #anita2 {
+                grid-column: 6;
+                grid-row: 8;
+                background-color: yellow;
+            }
+            
+            #anita3 {
+                grid-column: 7;
+                grid-row: 8;
+                background-color: cyan;
+            }
         
         .joe {
             grid-row: 8;
@@ -208,12 +293,67 @@ body {
             grid-column: 1;
             grid-row: 6;
         }
+            .play-ryan {
+                line-height: 1;
+            }
+            
+            #ryan1 {
+                grid-column: 2;
+                grid-row: 6;
+                background-color: orange;
+            }
+            
+            #ryan2 {
+                grid-column: 3;
+                grid-row: 6;
+                background-color: pink;
+            }
+            
+            #ryan3 {
+                grid-column: 4;
+                grid-row: 6;
+                background-color: cyan;
+            }
+            
+            #ryan4 {
+                grid-column: 1;
+                grid-row: 7; 
+                background-color: magenta;
+            }
+            
+            #ryan5 {
+                grid-column: 2;
+                grid-row: 7;
+                background-color: lime;
+            }
+            
         
         .bilal {
             grid-column: 1;
             grid-row: 5;
         }
-        
+            .play-bilal {
+                line-height: 1;
+            }
+            
+            #bilal1 {
+                grid-column: 1;
+                grid-row: 4;
+                background-color: yellow;
+            }
+            
+            #bilal2 {
+                grid-column: 2;
+                grid-row: 5;
+                background-color: pink;
+            }
+            
+            #bilal3 {
+                grid-column: 3;
+                grid-row: 5;
+                background-color: cyan;
+            }
+                
         
         
         .jeewon {
