@@ -80,7 +80,6 @@ body {
     position: relative;
     width: 100%;
     font-size: 1.5rem;
-    margin-bottom: 2.5%
 }
     
 .mid {
@@ -88,11 +87,19 @@ body {
     width: 100%;
 }
 
+    .starter {
+        font-family: 'px437';
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+    }
+
 .clock {
    
     position: absolute;
     right: 1%;
-    background: url('images/clock.png');
+    background: url('images/clock2.png');
     width: 33%;
     background-size: contain;
     top: 1%;
@@ -135,6 +142,7 @@ body {
     cursor: pointer;
     
 }
+ 
         
         .sheri {
             grid-column: 5;
