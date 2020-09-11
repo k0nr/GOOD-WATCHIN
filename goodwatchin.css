@@ -100,7 +100,7 @@ body {
     position: absolute;
     right: 1%;
     background: url('images/clock2.png');
-    width: 33%;
+    width: 35%;
     background-size: contain;
     top: 1%;
 
@@ -442,8 +442,36 @@ body {
                 grid-column: 4;
                 background-color: yellow;
             }
-    
+    .item:hover {
+        filter: brightness(125%);
+        transform: scale(1.5);
+        overflow: hidden;
+    }
 
+/* bios */
+
+.bios {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: repeat(15, 1fr);
+    position: absolute;
+    top: 2.5%;
+    width: 70%;
+    left: 15%;
+    
+}
+    
+    .pic-<sheri {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .bio-sheri {
+        grid-column: 2;
+        grid-row: 1;
+        
+    }
+    
 /* link styling */
 
 a:link {
@@ -492,7 +520,7 @@ height:0;
 .middle {
     position: relative;
     width: 60%;
-    left: 5%;
+    left: 1%;
     overflow: hidden;
 
 }
