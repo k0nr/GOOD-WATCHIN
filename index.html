@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" href="images/icon-192x192.png">
     
     <link rel="stylesheet" type="text/css" href="goodwatchin.css">
-    
+    <base target="player">
     
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css">
@@ -175,21 +175,29 @@ function malicToggle() {
 
 
 <div class="outer">
-    <div class="content">
+    <div class="pattern-cross-dots-lg bg-black purple">
     
         <div class="head">
-            <div class="banner pattern-zigzag-sm bg-yellow yellow-lighter"><span style="color: black; background-color: #dc13ff">THE INFINTE WRENCH GOES VIRAL [BONUS STAGE]</span></div>        <!-- remember to make "bonus stage" blink or something.. and ask if there's a proper name -->
-    
-    
-            <div class="mid pattern-zigzag-md bg-yellow yellow-lightest">
-                <div class="video intro">
-                    <div class="youtube-responsive-container"><iframe src="https://www.youtube.com/embed/jBfjMVB3RYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                </div>
-            </div></div>
-         
+            <div class="banner pattern-cross-dots-lg bg-black yellow"><span style="color: black; background-color: #dc13ff">THE INFINTE WRENCH GOES VIRAL [BONUS STAGE]</span></div>        <!-- remember to make "bonus stage" blink or something.. and ask if there's a proper name -->
+        </div>
         
-        <div class="mid pattern-zigzag-sm bg-yellow-lighter yellow">.
-            <div class="clock">
+        <div class="border pattern-vertical-stripes-md bg-mint-dark red-light">&nbsp;</div>
+       
+        <div class="mid">
+            
+            <div class="middle">
+                <div class="youtube-responsive-container white-border">
+                    <iframe class="responsive-iframe"
+                        name="player"
+                        src="intro-video.html"
+                        height="800px"
+                        margin-top="5%">
+                    </iframe>
+                </div>
+                
+            </div>
+            
+             <div class="clock">
                 <div class="grid-container">
                  
                     <div class="item lb" onclick="toggle_visibility()"><img src="headshots/lisa-buscani.png"></div>
@@ -231,7 +239,11 @@ function malicToggle() {
                         
                     
                     <div class="item joe"><img src="headshots/joe-dempsey.png"></div>
+                    
+                    
                     <div class="item steve"><img src="headshots/steve-mosqueda.png"></div>
+                    
+                    
                     <div class="item ryan" onclick="ryanToggle()"><img src="headshots/ryan-walters.png"></div>
                         <div class="play-ryan" id="ryan1" style="display: none"><a href="ryan.html">Ryan Walters: Homemade Daredevil</a></div>
                         <div class="play-ryan" id="ryan2" style="display: none"><a href="ryan.html">Tiny Buster Keaton House Gag</a></div>
@@ -241,6 +253,8 @@ function malicToggle() {
                             
                         
                     <div class="item bilal" onclick="bilalToggle()"><img src="headshots/bilal-dardai.png"></div>
+                    
+                    
                         <div class="play-bilal" id="bilal1" style="display: none"><a href="bilal.html">Phases Six Through Ten</a></div>
                         <div class="play-bilal" id="bilal2" style="display: none"><a href="bilal.html">ENHANCE</a></div>
                         <div class="play-bilal" id="bilal3" style="display: none"><a href="bilal.html">With a Full Day's Supply of Vitamin Torture Porn</a></div>
@@ -255,7 +269,7 @@ function malicToggle() {
                         
                     
                     <div class="item malic" onclick="malicToggle()"><img src="headshots/malic-white.png"></div>
-                        <div class="play-malic" id="malic1" style="display: none"><a href="malic.html">Cunty Trees</a></div>
+                        <div class="play-malic" id="malic1" style="display: none"><a href="malic.html" target="player"><a href="bio.html" target="bio">Cunty Trees</a></a></div>
             
                     
                     
@@ -275,8 +289,15 @@ function malicToggle() {
                 </div>
                 
             </div>
+        
+        </div>
+        
+        
+        <div class="mid pattern-cross-dots-lg bg-black purple">.
+         
             
-            <div class="clickiez">CLICK A FACE<br> AND PICK A PLAY</div>
+       
+     
             
         </div>
     

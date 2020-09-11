@@ -113,3 +113,8 @@ function toggle_visibility() {
         elements[i].style.display = elements[i].style.display == 'inline' ? 'none' : 'inline';
     }
 }
+
+
+
+- individual creator pages with bios
+- intro video is almost the first thing you see, or
