@@ -130,6 +130,7 @@ body {
         grid-template-rows: repeat(8, 1fr);
         grid-gap: 8px;
         font-family: 'px437';
+       font-size: 1.8rem;
 
         
     }
@@ -137,9 +138,16 @@ body {
            width: 100%; 
         }
         
+        .grid-container a {
+            align-items: center;
+            justify-content: center;
+        }
+        
 .item {
     cursor: pointer;
-    
+    max-width: 1fr;
+    max-height: 100px;
+
 }
  
         
@@ -213,7 +221,14 @@ body {
             line-height: 1;
             background-color: orange;
             color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             }
+                .playlink {
+                    
+                    
+                }
     
     
     
