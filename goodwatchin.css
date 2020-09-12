@@ -85,6 +85,7 @@ body {
 .mid {
     position: relative;
     width: 100%;
+    
 }
 
     .starter {
@@ -458,14 +459,20 @@ body {
 
 /* bios */
 
+.bio-container {
+    position: relative;
+    width: 70%;
+    left: 15%;
+}
+
 .bios {
     display: grid;
     grid-template-columns: 20% auto;
     grid-template-rows: repeat(15, 1fr);
-    position: absolute;
+    position: relative;
     top: 2.5%;
-    width: 70%;
-    left: 15%;
+    width: 100%;
+    left: 0;
     
 }
     
