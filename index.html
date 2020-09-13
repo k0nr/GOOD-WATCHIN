@@ -26,12 +26,10 @@
 
 
 function philFunction() {
-    var x = document.getElementById("play-phil");
-    if (x.style.display === 'none') {
-    x.style.display = 'flex';
-    } else {
-        x.style.display = 'none';
-        }
+    elements = document.getElementsByClassName('play-phil');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'flex' ? 'none' : 'flex';
+    }
 }
 
 </script>
@@ -165,7 +163,15 @@ function malicToggle() {
 }
 
 </script>
+<script>
+function steveToggle() {
+    elements = document.getElementsByClassName('play-steve');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'flex' ? 'none' : 'flex';
+    }
+}
 
+</script>
 
 <script>
     function playVisited() {
@@ -181,7 +187,15 @@ function malicToggle() {
     }
     
     function philVisit() {
-    elements = document.getElementById('play-phil').classList.add('strike');
+    elements = document.getElementById('phil1').classList.add('strike');
+    }
+    
+    function phil2() {
+    elements = document.getElementById('phil2').classList.add('strike');
+    }
+    
+    function phil3() {
+    elements = document.getElementById('phil3').classList.add('strike');
     }
     
     function ayunVisit() {
@@ -216,6 +230,10 @@ function malicToggle() {
         
         function anita3() {
         elements = document.getElementById('anita3').classList.add('strike');
+        }
+        
+    function steveVisit() {
+        elements = document.getElementById('steve1').classList.add('strike');
         }
         
     function ryanVisit() {
@@ -319,8 +337,10 @@ function malicToggle() {
                         
                     
                     <div class="item phil" onclick="philFunction()"><img src="headshots/phil-ridarelli.png"></div>
-                        <a id="play-phil" style="display: none" href="phil.html" onclick="philVisit()">2</a>
-                    
+                        <a class="play-phil" id="phil1" style="display: none" href="phil.html" onclick="philVisit()">2</a>
+                        <a class="play-phil" id="phil2" style="display: none" href="phil2.html" onclick="phil2()">III</a>
+                        <a class="play-phil" id="phil3" style="display: none" href="phil3.html" onclick="phil3()">31</a>
+                        
                     <div class="item ayun" onclick="ayunToggle()"><img src="headshots/ayun-halliday.png"></div>
                          <a class="play-ayun" id="ayun1" style="display: none" href="ayun.html" onclick="ayunVisit()">1</a>
                     
@@ -355,7 +375,8 @@ function malicToggle() {
                     <div class="item joe"><img src="headshots/joe-dempsey.png"></div>
                     
                     
-                    <div class="item steve"><img src="headshots/steve-mosqueda.png"></div>
+                    <div class="item steve" onclick="steveToggle()"><img src="headshots/steve-mosqueda.png"></div>
+                        <a class="play-steve" id="steve1" style="display: none" href="steve.html" onClick="steveVisit()">30</a>
                     
                     
                     <div class="item ryan" onclick="ryanToggle()"><img src="headshots/ryan-walters.png"></div>
@@ -429,7 +450,7 @@ Phil graduated from the Theatre School at DePaul University. Has improvised at I
 
                 <div><img src="headshots/ayun-halliday.png"></div>
                 <div><div class="name">Ayun Halliday</div><div class="years">Active Ensemble 1989 – 1995 NY Neo-Futurist (Branch #1): 1995 – 1998</div><br>
-Ayun Halliday is a performer, playwright, and author of seven books, including No Touch Monkey! And Other Travel Lessons Learned Too Late. As a member of the Neo-Futurists from 1989-1998, she wrote, directed and performed in over 500 short plays and several full-length solo performances. Longer works include The Mermaid’s Legs, Fawnbook, Zamboni Godot, and NURSE. Ayun co-founded Theater of the Apes with her husband Greg Kotis, and hosts its monthly book-based variety show Necromancers of the Public Domain.  ayunhalliday.com </div>
+Ayun Halliday is a performer, playwright, and author of seven books, including No Touch Monkey! And Other Travel Lessons Learned Too Late. As a member of the Neo-Futurists from 1989-1998, she wrote, directed and performed in over 500 short plays and several full-length solo performances. Longer works include The Mermaid’s Legs, Fawnbook, Zamboni Godot, and NURSE. Ayun co-founded Theater of the Apes with her husband Greg Kotis, and hosts its monthly book-based variety show Necromancers of the Public Domain.  <a href="http://ayunhalliday.com/">ayunhalliday.com</a>.</div>
 
                 <div><img src="headshots/scott-hermes.png"></div>
                 <div><div class="name">Scott Hermes</div><div class="years">Active Ensemble 1992 – 1995</div><br>Scott’s last name is spelled like the Greek god of messengers and travelers and luck, but is pronounced like “worms” or “germs.” His first name is pronounced more or less the way you’d expect.</div>
@@ -458,22 +479,19 @@ Joe Dempsey was an “active” Neo-Futurist from 2002 – 2004. Brief, yes, but
                 <div><img src='headshots/ryan-walters.png'></div>
                 <div><div class="name">Ryan Walters</div><div class="years"> Active Ensemble 2002 – 2015 / Artistic Director 2009 – 2012</div><br>
 My Bio by Ryan Walters
-For my bio I have done many things. For example, one summer I worked in a tourist information caboose for the Scottsbluff, Nebraska Chamber of Commerce. Another summer I worked at the Kawasaki factory in Lincoln, Nebraska doing injecting molding for jet ski’s.
-I went to college at the University of Nebraska-Kearney, home of the fighting Antelopes, or Lopers. They struck fear into the hearts of their opponents, a fear not unlike being charged by a herd of rabid angry antelopes. In college I was in quite a few plays, and pictures from a couple of shows I was in more than 5 years ago still hang in a hall there. Maybe students look up and think, “Who is that guy?” or “Someday I’m going to be like him.” or “When are they going to take down those pictures?”
-If you drive by Kearney, Nebraska on I-80 you will notice a gigantic arch spanning the interstate. It is quite a sight. My college ex-girlfriend (she was a studio arts major) worked on the arch installing displays and one of my college acting teachers can be found every summer at the arch as the Mountain Man! (I’m not making fun of him, he is a great director.) I’ve been a costumed character at a tourist attraction myself! I was a gigantic penguin during the holidays at Navy Pier and I terrified children and adults at the Navy Pier Haunted House. My favorite character was Nigel the Evil Librarian of DOOOOOOOOM!
-Since moving to Chicago I’m proud to have taught arts in the AmeriCorps program at the Northwestern University Settlement House and HEY!!!!!!! Pay attention to this part:
-I am a member of the theater group Barrel of Monkeys. We teach creative writing to 3rd through 6th graders in the Chicago public schools and perform their stories for their school. The Monkeys also do a show called “That’s Weird, Grandma” showcasing the work of students from residencies we have done over the past four years. LEARN MORE!! Check out www.barrelofmonkeys.org.
-I’ve also had lots of fun working with Ego Productions. Check out www.egoproductions.org/theater/.
-I contributed a one page comic to The New Graphics Revival Kit Issue. I really like comics and this magazine really captures the storytelling aspects of the medium. Check out www.graphicsrevival.com.
-This is the end of my bio. Thanks for reading it.
-Grade: B- Lacks depth
+<p>For my bio I have done many things. For example, one summer I worked in a tourist information caboose for the Scottsbluff, Nebraska Chamber of Commerce. Another summer I worked at the Kawasaki factory in Lincoln, Nebraska doing injecting molding for jet ski’s.<br>
+<br>I went to college at the University of Nebraska-Kearney, home of the fighting Antelopes, or Lopers. They struck fear into the hearts of their opponents, a fear not unlike being charged by a herd of rabid angry antelopes. In college I was in quite a few plays, and pictures from a couple of shows I was in more than 5 years ago still hang in a hall there. Maybe students look up and think, “Who is that guy?” or “Someday I’m going to be like him.” or “When are they going to take down those pictures?”<br>
+<br>If you drive by Kearney, Nebraska on I-80 you will notice a gigantic arch spanning the interstate. It is quite a sight. My college ex-girlfriend (she was a studio arts major) worked on the arch installing displays and one of my college acting teachers can be found every summer at the arch as the Mountain Man! (I’m not making fun of him, he is a great director.) I’ve been a costumed character at a tourist attraction myself! I was a gigantic penguin during the holidays at Navy Pier and I terrified children and adults at the Navy Pier Haunted House. My favorite character was Nigel the Evil Librarian of DOOOOOOOOM!<br>
+<br>Since moving to Chicago I’m proud to have taught arts in the AmeriCorps program at the Northwestern University Settlement House and HEY!!!!!!! Pay attention to this part:<br>
+<br>I am a member of the theater group Barrel of Monkeys. We teach creative writing to 3rd through 6th graders in the Chicago public schools and perform their stories for their school. The Monkeys also do a show called “That’s Weird, Grandma” showcasing the work of students from residencies we have done over the past four years. LEARN MORE!! Check out <a href="https://www.playmakerslab.org/">Playmakers Laboratory</a>.This is the end of my bio. Thanks for reading it.
+<p><br>Grade: B- Lacks depth
 </div>
 
             <div><img src='headshots/bilal-dardai.png'></div>
             <div><div class="name">Bilal Dardai</div><div class="years">Active Ensemble 2004-2016, Booking Coordinator 2009-2012, Artistic Director 2012-2015</div><br>
-Bilal Dardai is the name of the artist for which this paragraph has been written. The paragraph is designed to give you additional information about the artist, Bilal Dardai, that you might otherwise have to learn from conversation or other sources. In theory, the paragraph offers you an easy means to learn more information about the aforementioned artist, Bilal Dardai, which is why you have been reading this paragraph.
-Until you realize, of course, that the paragraph told you next to nothing about Bilal Dardai, save that the paragraph was meant to be about Bilal Dardai, the artist for whom the paragraph had been written. So you continue reading the following paragraph in the hopes that this paragraph will present to you the information you were unable to find in the first paragraph.
-But then the second paragraph ended as well with no more information about Bilal Dardai than had been found in the first paragraph. And ultimately, the frustration of having read two-plus paragraphs that did not give you the information you wished made you decide that you didn’t want to learn anything about this artist, Bilal Dardai, for whom no information was readily available despite there being a set of paragraphs designed to give you information about Bilal Dardai.
+Bilal Dardai is the name of the artist for which this paragraph has been written. The paragraph is designed to give you additional information about the artist, Bilal Dardai, that you might otherwise have to learn from conversation or other sources. In theory, the paragraph offers you an easy means to learn more information about the aforementioned artist, Bilal Dardai, which is why you have been reading this paragraph.<br>
+<br>Until you realize, of course, that the paragraph told you next to nothing about Bilal Dardai, save that the paragraph was meant to be about Bilal Dardai, the artist for whom the paragraph had been written. So you continue reading the following paragraph in the hopes that this paragraph will present to you the information you were unable to find in the first paragraph.<br>
+<br>But then the second paragraph ended as well with no more information about Bilal Dardai than had been found in the first paragraph. And ultimately, the frustration of having read two-plus paragraphs that did not give you the information you wished made you decide that you didn’t want to learn anything about this artist, Bilal Dardai, for whom no information was readily available despite there being a set of paragraphs designed to give you information about Bilal Dardai.
 And the fourth paragraph was going to tell you everything, but once it realized you were gone it decided there was no point to it.
 </div>
 

@@ -203,13 +203,25 @@ body {
             grid-row: 2;
         }
         
-                #play-phil {
+                #phil1{
                     grid-column: 8;
                     grid-row: 2;
                     line-height: 1;
                     background-color: cyan;
                     color: black;
                     
+                }
+                
+                #phil2 {
+                    grid-column: 6;
+                    grid-row: 2;
+                    background-color: orange;
+                }
+                
+                #phil3 {
+                    grid-column: 7;
+                    grid-row: 1;
+                    background-color: yellow;
                 }
        
               
@@ -333,6 +345,11 @@ body {
             grid-row: 7;
         }
         
+            #steve1 {
+            grid-column: 3;
+            grid-row: 8;
+            background-color: cyan;                
+            }
         .ryan {
             grid-column: 1;
             grid-row: 6;
