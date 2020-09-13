@@ -144,10 +144,15 @@ body {
             justify-content: center;
         }
         
+        .grid-container a:visited {
+            color: rgba(0,0,0,0);
+        }
+        
 .item {
     cursor: pointer;
     max-width: 1fr;
     max-height: 100px;
+    z-index: 100;
 
 }
  
@@ -455,6 +460,7 @@ body {
         filter: brightness(125%);
         transform: scale(1.5);
         overflow: hidden;
+        z-index: 110;
     }
 
 /* bios */
@@ -476,7 +482,7 @@ body {
     
 }
     
-    .pic-<sheri {
+   /* .pic-sheri {
         grid-column: 1;
         grid-row: 1;
     }
@@ -508,8 +514,17 @@ a:hover {
     color: black;
     text-decoration: underline;
 }
+
+a:visited {
+    color: orange;
+}
     
-    
+.strike {
+    filter: brightness(25%);
+}
+    .strike a {
+        color: orange
+    }
 
 /* youtube */
 
