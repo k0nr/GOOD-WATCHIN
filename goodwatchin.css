@@ -467,20 +467,34 @@ body {
 
 .bio-container {
     position: relative;
-    width: 70%;
+    width: 50%;
     left: 15%;
+
 }
 
 .bios {
     display: grid;
     grid-template-columns: 20% auto;
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-rows: repeat(15, auto);
     position: relative;
     top: 2.5%;
     width: 100%;
     left: 0;
+    grid-gap: 8px;
     
 }
+    .bios > *
+        {
+            background-color: black;
+            color: white;
+            border: 2px dashed white;
+        }
+        
+        .bios img {
+            border: 2px dashed cyan;
+        }
+    
+
     
    /* .pic-sheri {
         grid-column: 1;
@@ -492,7 +506,7 @@ body {
         grid-row: 1;
         
     }
-    
+
 /* link styling */
 
 a:link {
