@@ -197,7 +197,19 @@ body {
                 grid-row: 4;
                 background-color: lime;
             }
-        
+            
+            #play-lb3 {
+                grid-column: 8;
+                grid-row: 3;
+                background-color: pink;
+            }
+            
+            #play-lb4 {
+                grid-column: 5;
+                grid-row: 3;
+                background-color: orange;
+            }
+            
         .phil {
             grid-column: 7;
             grid-row: 2;
