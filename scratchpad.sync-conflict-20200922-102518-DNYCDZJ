@@ -1,0 +1,154 @@
+
+
+
+TO DO
+
+    numbers rather than titles
+    visited styles
+    backgrounds for bio grid
+    content for bio grid
+    fucking automatic resizing sucks
+    make a choice about the numbers vs titles & the fit to grid
+	
+	style :visited by javascript
+	strkethru, color, whatever. just figure it out, visited links have to change so people can keep track of where they are in the show. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+timeline
+    horizontal timeline
+    very long... long meaning wide i guess
+    
+    opening compartments
+    things on hover
+
+
+micro-library
+
+
+original photobooths
+bios
+
+
+use the clock to show a timeline
+headshot faces
+    take a whole timeline in, look at it all at once
+    
+
+COLLAGE/monty-python animate photographs of the darkroom timer
+    we have a thing
+    
+    
+circles are hard
+circles are doable
+    move the hands
+    
+
+    
+collapsibles: 
+    https://www.w3schools.com/howto/howto_js_collapsible.asp [JAVASCRIPT]
+    https://alligator.io/css/collapsible/ [pure CSS* * not fucking really]
+    https://jsfiddle.net/c1ypx24c/12/
+    
+    https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390
+    
+tooltips: 
+    https://www.w3schools.com/css/css_tooltip.asp
+    
+    
+    
+    
+    
+GA?
+    not celebrating, but not erasing
+    
+    
+    
+    
+    
+Sheri
+Lisa
+Phil
+Ayun
+
+Scott
+Greg
+Diana
+Anita
+
+Joe
+Steve
+Ryan
+Bilal
+
+Jeewon
+Tif
+Malic
+
+
+
+reduce clicks
+    each writer has one page 
+    their div is on display 
+    scroll to hidden anchors, include all their vids on one page
+    
+    
+    function lisa2Function() {
+var appBanners = document.getElementsByClassName('play-lbz');
+ for (var i = 0; i < appBanners.length; i ++); {
+     appBanners[i].style.display = 'block';
+ }
+}
+
+function philFunction() {
+    var x = document.getElementById("play-phil");
+    if (x.style.display === 'none') {
+    x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+        }
+}
+
+
+    
+function lisa() {
+var appBanners = document.getElementsByClassName('play-lbz');
+ for (var i = 0; i < appBanners.length; i ++);
+     if (appBanners[i]style.display === 'none')   {
+     appBanners[i].style.display = 'block';
+     } else {
+     appBanners[i].style.display ='none';
+ }
+}
+
+
+
+
+function toggle_visibility() {
+    elements = document.getElementsByClassName('play-lbz');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = elements[i].style.display == 'inline' ? 'none' : 'inline';
+    }
+}
+
+
+
+- individual creator pages with bios
+- intro video is almost the first thing you see, or

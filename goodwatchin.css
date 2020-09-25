@@ -368,6 +368,19 @@ body {
             grid-row: 8;
             background-color: cyan;                
             }
+            
+            #steve2 {
+            grid-column: 4;
+            grid-row: 7;
+            background-color: orange;
+            }
+            
+            #steve3 {
+            grid-column: 4;
+            grid-row: 8;
+            background-color: pink;
+            }
+            
         .ryan {
             grid-column: 1;
             grid-row: 6;
